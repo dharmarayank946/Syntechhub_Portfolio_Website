@@ -3,755 +3,408 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Personal Tribute Page for Nagalambika D Koralli - VEDA Technology Web Development Internship Task 1.">
-    <title>Tribute to Nagalambika D Koralli — VEDA Task 1</title>
-    <!-- Google Fonts: Plus Jakarta Sans for clean modern typography -->
+    <meta name="description" content="Personal Introduction Page of Nagalambika D Koralli - Computer Science Student, Web Developer, and UI/UX Learner. Aspiring Scientist/Engineer 'SC' in ISRO.">
+    <title>Nagalambika D Koralli | Personal Introduction</title>
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- 1. HEADER & NAVIGATION -->
-    <header class="navbar" id="top">
+    <!-- HEADER / NAVIGATION -->
+    <header class="header">
         <div class="container nav-container">
-            <a href="#home" class="logo" aria-label="Home">
-                <span class="logo-initials">NK</span>
-                <span class="logo-name">Nagalambika D Koralli</span>
-            </a>
-
-            <button class="mobile-toggle" aria-label="Toggle Menu" id="menuToggle" aria-expanded="false">
-                <span class="hamburger"></span>
-            </button>
-
-            <nav class="nav-menu" id="navMenu" aria-label="Main Navigation">
-                <ul class="nav-list">
-                    <li><a href="#home" class="nav-link active">Home</a></li>
-                    <li><a href="#story" class="nav-link">Story</a></li>
-                    <li><a href="#achievements" class="nav-link">Achievements</a></li>
-                    <li><a href="#projects" class="nav-link">Projects</a></li>
-                    <li><a href="#skills" class="nav-link">Skills</a></li>
-                    <li><a href="#journey" class="nav-link">Journey</a></li>
-                    <li><a href="#contact" class="nav-link">Contact</a></li>
-                    <li class="nav-social-item">
-                        <a href="https://www.linkedin.com/in/nagalambika-k-a283b039b/" target="_blank" rel="noopener noreferrer" class="nav-social-link" aria-label="LinkedIn Profile">
-                            <svg class="linkedin-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                                <rect x="2" y="9" width="4" height="12"></rect>
-                                <circle cx="4" cy="4" r="2"></circle>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
+            <a href="#hero" class="logo">NK</a>
+            <nav class="nav-links">
+                <a href="#hero">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#work">Work</a>
+                <a href="#goal">Goal</a>
+                <a href="#contact">Contact</a>
             </nav>
         </div>
     </header>
 
     <main>
-        <!-- 2. HOME / HERO SECTION -->
-        <section id="home" class="hero-section">
-            <div class="container hero-container">
-                
-                <!-- Left Side: Text Content -->
+        <!-- HERO SECTION -->
+        <section id="hero" class="hero-section">
+            <div class="container hero-grid">
                 <div class="hero-content">
-                    <div class="profession-badge">
-                        <span class="badge-dot"></span>
-                        <span class="badge-text">Student • Web Development Intern • UI/UX Learner</span>
-                    </div>
-
-                    <h1 class="hero-name">Nagalambika D Koralli</h1>
-
+                    <span class="badge">Computer Science Student</span>
+                    <h1 class="hero-title">Hi, I'm Nagalambika D Koralli</h1>
+                    <p class="hero-tagline">Learning. Creating. Building. Growing.</p>
                     <p class="hero-intro">
-                        Computer Science undergraduate focused on Web Development and currently exploring UI/UX.
+                        A passionate 5th semester Computer Science student dedicated to building clean web experiences, exploring UI/UX, and mastering software development step by step.
                     </p>
+                    <div class="hero-actions">
+                        <a href="#about" class="btn btn-primary">Explore My Journey</a>
+                        <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                    </div>
+                </div>
+                <div class="hero-image-container">
+                    <div class="photo-backdrop"></div>
+                    <figure class="photo-wrapper">
+                        <img src="profile.jpg" alt="Nagalambika D Koralli Professional Profile Photo" class="profile-photo">
+                    </figure>
+                </div>
+            </div>
 
-                    <div class="hero-cta-group">
-                        <a href="#projects" class="btn btn-primary btn-green">
-                            View My Work <span class="btn-arrow">→</span>
+            <!-- Hero Scroll Transition Indicator -->
+            <div class="hero-scroll-indicator">
+                <a href="#about" class="scroll-link">
+                    <span>Scroll to explore</span>
+                    <span class="scroll-arrow">↓</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="section about-section">
+            <div class="container">
+                
+                <!-- 1. ABOUT ME (Shorter & Clearer) -->
+                <div class="about-header-area">
+                    <div class="about-title-group">
+                        <h2 class="section-title">About Me</h2>
+                        <div class="accent-line"></div>
+                        <span class="about-subtitle">5th Semester Computer Science & Engineering Student</span>
+                    </div>
+                    <p class="about-intro-text">
+                        Hello, I’m <strong>Nagalambika D Koralli</strong>, a Computer Science and Engineering student passionate about learning, creating and building with technology.
+                    </p>
+                    <p class="about-intro-subtext">
+                        My journey includes college projects, internships, hackathons and continuous learning in Web Development and UI/UX.
+                    </p>
+                </div>
+
+                <!-- 2. INTERNSHIP EXPERIENCE -->
+                <article class="about-panel internship-panel-full">
+                    <span class="panel-label">Practical Experience</span>
+                    <h3>Internship Experience</h3>
+                    
+                    <div class="experience-list">
+                        <div class="exp-item">
+                            <h4 class="exp-title">Mastertej — <span class="exp-role">Web Development & AI Intern</span></h4>
+                            <p>Gained practical experience in website development, UI design, project management, research, documentation and AI-assisted workflows.</p>
+                        </div>
+                        
+                        <div class="exp-item">
+                            <h4 class="exp-title">ElevanceSkills — <span class="exp-role">Full Stack Web Development Intern</span></h4>
+                            <p>Worked on full-stack web development and gained practical experience through real-time projects.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 3. ACHIEVEMENTS & HACKATHONS -->
+                <article class="about-panel achievement-panel-full">
+                    <span class="panel-label">Events & Recognition</span>
+                    <h3>Achievements & Hackathons</h3>
+
+                    <div class="achievement-highlight-box">
+                        <span class="achievement-icon">🏆</span>
+                        <span class="achievement-text">First Prize — Bug Hunt, Jnanothsava-2026</span>
+                    </div>
+
+                    <div class="hackathon-item">
+                        <h4 class="hack-title">National Level Hackathon — <span class="hack-sub">CodeMyFYP / Build Beyond Limits 2026</span></h4>
+                        <p>Participated in the Accessible India track representing Sharanbasava University.</p>
+                    </div>
+
+                    <p class="achievement-summary-text">
+                        Along with my internships, I have participated in hackathons and technical events, gaining experience in teamwork, problem-solving and building projects under time constraints.
+                    </p>
+                </article>
+
+                <!-- 4. CREATIVE SIDE + UI/UX (Compact 2-Column Layout) -->
+                <div class="about-row-2col creative-uiux-grid">
+                    <!-- Left: Creative Side -->
+                    <article class="about-panel creative-panel">
+                        <span class="panel-label">Creative Interest</span>
+                        <h3>Creative Side</h3>
+                        <p>
+                            I enjoy creative crafting and like turning simple ideas into something meaningful.
+                        </p>
+                    </article>
+
+                    <!-- Right: UI/UX & Design -->
+                    <article class="about-panel uiux-panel">
+                        <span class="panel-label">Design & Learning</span>
+                        <h3>UI/UX & Design</h3>
+                        <p>
+                            I am currently learning Figma, user research, wireframing and prototyping to combine creativity with technology.
+                        </p>
+                    </article>
+                </div>
+
+                <!-- 6. MY DEVELOPMENT JOURNEY -->
+                <div class="development-journey-wrapper">
+                    <span class="journey-label">My Development Journey</span>
+                    <div class="journey-pipeline">
+                        <div class="journey-step">Learning</div>
+                        <div class="journey-arrow">→</div>
+                        <div class="journey-step">Projects</div>
+                        <div class="journey-arrow">→</div>
+                        <div class="journey-step">Internships</div>
+                        <div class="journey-arrow">→</div>
+                        <div class="journey-step">Hackathons</div>
+                        <div class="journey-arrow">→</div>
+                        <div class="journey-step">UI/UX</div>
+                        <div class="journey-arrow">→</div>
+                        <div class="journey-step">Continuous Growth</div>
+                        <div class="journey-arrow">→</div>
+                        <div class="journey-step journey-target">ISRO</div>
+                    </div>
+                </div>
+
+                <!-- 7. MY GOAL -->
+                <article class="about-panel about-goal-panel">
+                    <span class="panel-label">Career Aspiration</span>
+                    <h3>My Goal</h3>
+                    <div class="goal-highlight-badge">
+                        Scientist/Engineer 'SC' in ISRO
+                    </div>
+                    <p class="goal-text">
+                        My goal is to become a <span class="highlight isro-highlight">Scientist/Engineer 'SC' in ISRO</span> as a Computer Science and Engineering graduate. I want to keep learning, gain practical experience and work towards contributing to India's space technology and missions.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- SKILLS SECTION -->
+        <section id="skills" class="section skills-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">My Skills</h2>
+                    <div class="accent-line"></div>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Programming -->
+                    <article class="skill-category">
+                        <h3 class="category-title">Programming</h3>
+                        <div class="skill-pill-list">
+                            <span class="skill-pill">Python</span>
+                            <span class="skill-pill">Java</span>
+                            <span class="skill-pill">C</span>
+                            <span class="skill-pill">JavaScript</span>
+                        </div>
+                    </article>
+
+                    <!-- Web Development -->
+                    <article class="skill-category">
+                        <h3 class="category-title">Web Development</h3>
+                        <div class="skill-pill-list">
+                            <span class="skill-pill">HTML5</span>
+                            <span class="skill-pill">CSS3</span>
+                            <span class="skill-pill">JavaScript</span>
+                            <span class="skill-pill">React</span>
+                        </div>
+                    </article>
+
+                    <!-- Backend -->
+                    <article class="skill-category">
+                        <h3 class="category-title">Backend</h3>
+                        <div class="skill-pill-list">
+                            <span class="skill-pill">Node.js</span>
+                            <span class="skill-pill">Python</span>
+                            <span class="skill-pill">Django</span>
+                            <span class="skill-pill">Flask</span>
+                        </div>
+                    </article>
+
+                    <!-- Database -->
+                    <article class="skill-category">
+                        <h3 class="category-title">Database</h3>
+                        <div class="skill-pill-list">
+                            <span class="skill-pill">MySQL</span>
+                            <span class="skill-pill">MongoDB</span>
+                        </div>
+                    </article>
+
+                    <!-- Tools -->
+                    <article class="skill-category">
+                        <h3 class="category-title">Tools & Platforms</h3>
+                        <div class="skill-pill-list">
+                            <span class="skill-pill">GitHub</span>
+                            <span class="skill-pill">VS Code</span>
+                            <span class="skill-pill">Render</span>
+                            <span class="skill-pill">Vercel</span>
+                            <span class="skill-pill">AI Tools</span>
+                        </div>
+                    </article>
+
+                    <!-- UI/UX Currently Learning -->
+                    <article class="skill-category category-learning">
+                        <h3 class="category-title">UI/UX — Currently Learning</h3>
+                        <div class="skill-pill-list">
+                            <span class="skill-pill learning-pill">Figma</span>
+                            <span class="skill-pill learning-pill">User Research</span>
+                            <span class="skill-pill learning-pill">Wireframing</span>
+                            <span class="skill-pill learning-pill">Prototyping</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- PREVIOUS WORK SECTION -->
+        <section id="work" class="section work-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Previous Work</h2>
+                    <div class="accent-line"></div>
+                </div>
+
+                <div class="work-card">
+                    <div class="work-info">
+                        <h3 class="work-project-title">Tribute & Storytelling Website</h3>
+                        <p class="work-description">
+                            A personal storytelling website created using HTML5 and CSS3 as part of my VEDA Technology Web Development Internship.
+                        </p>
+                    </div>
+                    <div class="work-action">
+                        <a href="https://dharmarayank946.github.io/Nagalambika-Tribute-Page/" target="_blank" rel="noopener noreferrer" class="btn btn-work">
+                            View Tribute Page →
                         </a>
-                        <a href="#story" class="btn btn-secondary">
-                            Explore My Journey <span class="btn-arrow">→</span>
-                        </a>
                     </div>
-                </div>
-
-                <!-- Right Side: Profile Photograph Presentation -->
-                <figure class="hero-visual">
-                    <div class="editorial-portrait-wrapper">
-                        <div class="portrait-offset-card"></div>
-                        <div class="portrait-container">
-                            <img src="profile.jpg" alt="Nagalambika D Koralli Portrait" class="profile-img">
-                        </div>
-                    </div>
-                </figure>
-
-            </div>
-        </section>
-
-        <!-- 3. MY STORY SECTION (CONTAINED EDITORIAL PANEL COMPOSITION) -->
-        <section id="story" class="story-section section-padding">
-            <div class="container">
-                <div class="story-panel-frame reveal-frame">
-                    
-                    <!-- Top Header -->
-                    <header class="story-panel-header">
-                        <span class="section-label">MY STORY</span>
-                        <h2 class="story-main-heading">From Curiosity to Creating for the Web</h2>
-                    </header>
-
-                    <!-- Main Story Area -->
-                    <div class="story-panel-body">
-                        
-                        <!-- Left Image Side (40%) -->
-                        <figure class="story-illustration-column reveal-left">
-                            <div class="illustration-decorative-offset"></div>
-                            <div class="illustration-card-container">
-                                <img src="story-illustration.jpg" alt="Conceptual illustration of tech growth and web development journey" class="story-panel-img">
-                            </div>
-                        </figure>
-
-                        <!-- Right Story Text Side (60%) -->
-                        <article class="story-text-column reveal-right">
-                            
-                            <!-- Paragraph 1 -->
-                            <div class="story-paragraph-block paragraph-delay-1">
-                                <div class="paragraph-accent-marker"></div>
-                                <p class="story-paragraph">
-                                    When I started college, I did not know much about technology or development. Through my college projects and hackathons, I gradually started exploring different areas and began with frontend development. I enjoyed creating websites, and this made me more interested in Web Development.
-                                </p>
-                            </div>
-
-                            <!-- Paragraph 2 -->
-                            <div class="story-paragraph-block paragraph-delay-2">
-                                <div class="paragraph-accent-marker"></div>
-                                <p class="story-paragraph">
-                                    An opportunity at Mastertej became an important step in my journey. During my 45-day internship, I gained practical exposure to website development, UI design, project management, research, documentation and AI-assisted workflows. This experience helped me understand that web development is more than just frontend development and encouraged me to explore Full Stack Development.
-                                </p>
-                            </div>
-
-                            <!-- Paragraph 3 -->
-                            <div class="story-paragraph-block paragraph-delay-3">
-                                <div class="paragraph-accent-marker"></div>
-                                <p class="story-paragraph">
-                                    I continue to learn different areas, including Python, but Web Development remains my main focus. At the same time, my creative side led me toward UI/UX. Now, in my 5th semester, I have started learning Figma and UI/UX concepts so that I can combine creativity with technology.
-                                </p>
-                            </div>
-
-                        </article>
-                    </div>
-
-                    <!-- Bottom Journey Strip -->
-                    <footer class="story-panel-footer reveal-strip">
-                        <div class="journey-strip-container">
-                            <div class="journey-step">
-                                <span class="step-code">01</span>
-                                <span class="step-title">College</span>
-                            </div>
-                            <span class="journey-connector"></span>
-                            <div class="journey-step">
-                                <span class="step-code">02</span>
-                                <span class="step-title">Frontend</span>
-                            </div>
-                            <span class="journey-connector"></span>
-                            <div class="journey-step">
-                                <span class="step-code">03</span>
-                                <span class="step-title">Internship</span>
-                            </div>
-                            <span class="journey-connector"></span>
-                            <div class="journey-step">
-                                <span class="step-code">04</span>
-                                <span class="step-title">Full Stack</span>
-                            </div>
-                            <span class="journey-connector"></span>
-                            <div class="journey-step">
-                                <span class="step-code">05</span>
-                                <span class="step-title">UI/UX</span>
-                            </div>
-                        </div>
-                    </footer>
-
                 </div>
             </div>
         </section>
 
-        <!-- 4. ACHIEVEMENTS & EXPERIENCES SECTION (MIXED EDITORIAL SHOWCASE) -->
-        <section id="achievements" class="achievements-section section-padding">
+        <!-- CAREER GOAL SECTION -->
+        <section id="goal" class="section goal-section">
             <div class="container">
-                <header class="section-header">
-                    <span class="section-label">ACHIEVEMENTS</span>
-                    <h2 class="section-title">Milestones That Shaped My Journey</h2>
-                    <p class="section-intro">
-                        Every competition, hackathon and learning experience has helped me build confidence, solve problems and grow as a technology student.
+                <div class="section-header">
+                    <h2 class="section-title">My Goal</h2>
+                    <div class="accent-line"></div>
+                </div>
+
+                <div class="goal-container">
+                    <div class="goal-header-box">
+                        <span class="goal-target-label">Future Career Goal</span>
+                        <h3 class="goal-main-heading">Scientist/Engineer 'SC' in ISRO</h3>
+                        <p class="goal-primary-statement">
+                            My goal is to become a Scientist/Engineer 'SC' in ISRO as a Computer Science Engineer.
+                        </p>
+                        <p class="goal-description">
+                            I want to build strong Computer Science and Engineering fundamentals, prepare for and clear the ISRO recruitment process, and contribute my technical skills to India's space technology and missions.
+                        </p>
+                    </div>
+
+                    <!-- CSS-ONLY PROGRESSION PIPELINE -->
+                    <div class="roadmap-wrapper">
+                        <div class="roadmap-step">
+                            <div class="step-badge">01</div>
+                            <div class="step-content">
+                                <h4>Student</h4>
+                                <p>5th Semester Computer Science Undergraduate</p>
+                            </div>
+                        </div>
+
+                        <div class="roadmap-arrow">↓</div>
+
+                        <div class="roadmap-step">
+                            <div class="step-badge">02</div>
+                            <div class="step-content">
+                                <h4>Strong CSE Fundamentals</h4>
+                                <p>Mastering Core Data Structures, Algorithms & Systems</p>
+                            </div>
+                        </div>
+
+                        <div class="roadmap-arrow">↓</div>
+
+                        <div class="roadmap-step">
+                            <div class="step-badge">03</div>
+                            <div class="step-content">
+                                <h4>Projects & Practical Experience</h4>
+                                <p>Building Real-World Software Projects & Internships</p>
+                            </div>
+                        </div>
+
+                        <div class="roadmap-arrow">↓</div>
+
+                        <div class="roadmap-step">
+                            <div class="step-badge">04</div>
+                            <div class="step-content">
+                                <h4>ISRO Recruitment Preparation</h4>
+                                <p>Rigorous Preparation & Written Test / Interview Focus</p>
+                            </div>
+                        </div>
+
+                        <div class="roadmap-arrow">↓</div>
+
+                        <div class="roadmap-step step-highlight">
+                            <div class="step-badge target-badge">Goal</div>
+                            <div class="step-content">
+                                <h4>Scientist/Engineer 'SC' in ISRO</h4>
+                                <p>Long-Term Professional Career Goal</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="goal-supporting-line">
+                        Step by step, I am building my knowledge, skills and experience towards this goal.
                     </p>
-                </header>
-
-                <div class="achievements-showcase-grid">
-                    
-                    <!-- 01. FEATURED ACHIEVEMENT (HERO CARD AT TOP) -->
-                    <article class="featured-achievement-card reveal-achievement">
-                        <div class="featured-badge-bar">
-                            <span class="badge-terracotta">FIRST PRIZE WINNER</span>
-                            <span class="featured-date">May 2026</span>
-                        </div>
-                        <div class="featured-body">
-                            <span class="featured-number">01</span>
-                            <div class="featured-info">
-                                <h3 class="featured-title">FIRST PRIZE — BUG HUNT</h3>
-                                <p class="featured-event">Event: Jnanothsava-2026</p>
-                                <p class="featured-desc">
-                                    Won First Prize in the Bug Hunt competition at Jnanothsava-2026. The experience involved identifying technical issues and applying problem-solving skills in a competitive environment.
-                                </p>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- TWO-COLUMN GRID FOR OTHER HACKATHONS & COMPETITIONS -->
-                    <div class="achievements-sub-grid">
-                        
-                        <!-- 02. National Virtual Hackathon -->
-                        <article class="sub-achievement-card reveal-left delay-1">
-                            <div class="sub-card-header">
-                                <span class="sub-number">02</span>
-                                <span class="category-tag">National Hackathon</span>
-                            </div>
-                            <h4 class="sub-title">National Virtual Hackathon</h4>
-                            <p class="sub-event">CodeMyFYP — Build Beyond Limits 2026</p>
-                            <span class="sub-meta-pill">Track: Accessible India</span>
-                            <p class="sub-desc">
-                                Participated in a national-level virtual hackathon representing Sharanbasava University and worked on a technology-focused solution under the Accessible India track.
-                            </p>
-                        </article>
-
-                        <!-- 03. Sprint Hackathon -->
-                        <article class="sub-achievement-card reveal-right delay-2">
-                            <div class="sub-card-header">
-                                <span class="sub-number">03</span>
-                                <span class="category-tag">Sprint Hackathon</span>
-                            </div>
-                            <h4 class="sub-title">Sprint Hackathon</h4>
-                            <p class="sub-event">INVICTUS 2K26</p>
-                            <span class="sub-meta-pill">4-hour Hackathon • May 2026</span>
-                            <p class="sub-desc">
-                                Participated in an intensive 4-hour sprint hackathon focused on rapid problem solving, teamwork and developing a technical solution within a limited time.
-                            </p>
-                        </article>
-
-                        <!-- 04. Jnanothsava-2026 Hackathon -->
-                        <article class="sub-achievement-card reveal-left delay-3">
-                            <div class="sub-card-header">
-                                <span class="sub-number">04</span>
-                                <span class="category-tag">Hackathon</span>
-                            </div>
-                            <h4 class="sub-title">Jnanothsava-2026 Hackathon</h4>
-                            <p class="sub-event">Sharanbasava University</p>
-                            <span class="sub-meta-pill">12-hour Hackathon • May 2026</span>
-                            <p class="sub-desc">
-                                Participated in a 12-hour hackathon and gained experience in collaborative problem solving, project development and working under time constraints.
-                            </p>
-                        </article>
-
-                        <!-- 05. AVIRAT-2025 Hackathon -->
-                        <article class="sub-achievement-card reveal-right delay-4">
-                            <div class="sub-card-header">
-                                <span class="sub-number">05</span>
-                                <span class="category-tag">Hackathon</span>
-                            </div>
-                            <h4 class="sub-title">AVIRAT-2025 Hackathon</h4>
-                            <p class="sub-event">Appa Institute of Engineering & Technology</p>
-                            <span class="sub-meta-pill">12-hour Hackathon • June 2025</span>
-                            <p class="sub-desc">
-                                Participated in a 12-hour hackathon and gained early experience in teamwork, problem solving and developing technical solutions within a limited timeframe.
-                            </p>
-                        </article>
-
-                    </div>
-
-                    <!-- 06. IGNITE BOOTCAMP (WIDE BOTTOM STRIP CARD) -->
-                    <article class="wide-bootcamp-card reveal-achievement delay-5">
-                        <div class="bootcamp-content">
-                            <span class="sub-number">06</span>
-                            <div class="bootcamp-text">
-                                <h4 class="bootcamp-title">Ignite Bootcamp</h4>
-                                <p class="bootcamp-org">Organized by: Wadhwani Foundation / NEN</p>
-                                <p class="bootcamp-desc">
-                                    Completed the Ignite Bootcamp requirements and assessments, gaining additional exposure to professional and entrepreneurial learning.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="bootcamp-meta">
-                            <span class="meta-tag green-tag">18 Hours</span>
-                            <span class="meta-tag">September 2026</span>
-                        </div>
-                    </article>
-
                 </div>
-
             </div>
         </section>
 
-        <!-- 5. PROJECTS SECTION (INTERACTIVE EDITORIAL CASE-STUDY SHOWCASE) -->
-        <section id="projects" class="projects-section section-padding">
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="section contact-section">
             <div class="container">
-                <header class="section-header">
-                    <span class="section-label">PROJECTS</span>
-                    <h2 class="section-title">Things I’ve Built</h2>
-                    <p class="section-intro">
-                        A collection of projects through which I have explored web development, full-stack development, programming and practical problem solving.
-                    </p>
-                </header>
-
-                <div class="projects-alternating-layout">
-                    
-                    <!-- PROJECT 01: TASK MANAGEMENT APPLICATION (LEFT) -->
-                    <article class="project-alt-row project-left reveal-left">
-                        <div class="project-alt-meta">
-                            <span class="project-alt-num">01</span>
-                            <span class="project-alt-type">Full Stack Web Application</span>
-                        </div>
-                        <div class="project-alt-content">
-                            <h3 class="project-alt-title">Task Management Application</h3>
-                            <p class="project-alt-desc">
-                                Developed a responsive full-stack Task Management web application with user authentication. The frontend was built using HTML5, CSS3 and JavaScript, with Node.js and MongoDB used for the backend and database.
-                            </p>
-                            <div class="project-alt-tech">
-                                <span class="tech-pill">HTML5</span>
-                                <span class="tech-pill">CSS3</span>
-                                <span class="tech-pill">JavaScript</span>
-                                <span class="tech-pill">Node.js</span>
-                                <span class="tech-pill">MongoDB</span>
-                            </div>
-                            <div class="project-alt-links">
-                                <a href="https://github.com/dharmarayank946/IssueFlow" target="_blank" rel="noopener noreferrer" class="btn-link-action">
-                                    GitHub <span class="link-arrow">→</span>
-                                </a>
-                                <span class="deployment-badge">Deployed on Render</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- PROJECT 02: GOVSHIELD NEXUS (RIGHT) -->
-                    <article class="project-alt-row project-right reveal-right delay-1">
-                        <div class="project-alt-meta">
-                            <span class="project-alt-num">02</span>
-                            <span class="project-alt-type">Full Stack</span>
-                        </div>
-                        <div class="project-alt-content">
-                            <h3 class="project-alt-title">GovShield Nexus</h3>
-                            <p class="project-alt-sub">Centralized Citizen Grievance Platform</p>
-                            <p class="project-alt-desc">
-                                A centralized digital platform that allows citizens to submit and track grievances online. It includes grievance submission, real-time status tracking and an admin dashboard, demonstrating frontend UI, backend logic and database integration.
-                            </p>
-                            <div class="project-alt-tech">
-                                <span class="tech-pill">HTML5</span>
-                                <span class="tech-pill">CSS3</span>
-                                <span class="tech-pill">JavaScript</span>
-                                <span class="tech-pill">Backend Logic</span>
-                                <span class="tech-pill">Database Integration</span>
-                            </div>
-                            <div class="project-alt-links">
-                                <a href="https://github.com/dharmarayank946/IssueFlow" target="_blank" rel="noopener noreferrer" class="btn-link-action">
-                                    GitHub <span class="link-arrow">→</span>
-                                </a>
-                                <a href="https://gov-sahayak-seven.vercel.app" target="_blank" rel="noopener noreferrer" class="btn-link-action btn-link-live">
-                                    Live Demo <span class="link-arrow">→</span>
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- PROJECT 03: PHISHGUARD (LEFT) -->
-                    <article class="project-alt-row project-left reveal-left delay-2">
-                        <div class="project-alt-meta">
-                            <span class="project-alt-num">03</span>
-                            <span class="project-alt-type">AI/ML System</span>
-                        </div>
-                        <div class="project-alt-content">
-                            <h3 class="project-alt-title">PhishGuard</h3>
-                            <p class="project-alt-sub">AI/ML Phishing Detection System</p>
-                            <p class="project-alt-desc">
-                                An ML-based system designed to classify URLs and emails as safe or malicious using trained models. It integrates real-time AI-driven pattern recognition for phishing detection.
-                            </p>
-                            <div class="project-alt-tech">
-                                <span class="tech-pill">Python</span>
-                                <span class="tech-pill">Machine Learning</span>
-                                <span class="tech-pill">AI Detection</span>
-                            </div>
-                            <div class="project-alt-links">
-                                <a href="https://phish-guard-brown.vercel.app" target="_blank" rel="noopener noreferrer" class="btn-link-action btn-link-live">
-                                    Live Demo <span class="link-arrow">→</span>
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- PROJECT 04: TASTYBITE (RIGHT) -->
-                    <article class="project-alt-row project-right reveal-right delay-3">
-                        <div class="project-alt-meta">
-                            <span class="project-alt-num">04</span>
-                            <span class="project-alt-type">Restaurant Website</span>
-                        </div>
-                        <div class="project-alt-content">
-                            <h3 class="project-alt-title">TastyBite</h3>
-                            <p class="project-alt-sub">Restaurant Frontend Application</p>
-                            <p class="project-alt-desc">
-                                Designed and developed a fully responsive restaurant frontend website with an attractive user interface and smooth user experience.
-                            </p>
-                            <div class="project-alt-tech">
-                                <span class="tech-pill">HTML5</span>
-                                <span class="tech-pill">CSS3</span>
-                                <span class="tech-pill">JavaScript</span>
-                            </div>
-                            <div class="project-alt-links">
-                                <a href="https://github.com/dharmarayank946/JDP-Restaurant" target="_blank" rel="noopener noreferrer" class="btn-link-action">
-                                    GitHub <span class="link-arrow">→</span>
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- PROJECT 05: HOTEL MANAGEMENT SYSTEM (LEFT) -->
-                    <article class="project-alt-row project-left reveal-left delay-4">
-                        <div class="project-alt-meta">
-                            <span class="project-alt-num">05</span>
-                            <span class="project-alt-type">Console Application</span>
-                        </div>
-                        <div class="project-alt-content">
-                            <h3 class="project-alt-title">Hotel Management System</h3>
-                            <p class="project-alt-sub">C Programming Project</p>
-                            <p class="project-alt-desc">
-                                A menu-driven C application for managing hotel orders, billing and customer interactions efficiently through structured terminal functions.
-                            </p>
-                            <div class="project-alt-tech">
-                                <span class="tech-pill">C Programming</span>
-                                <span class="tech-pill">CLI Logic</span>
-                                <span class="tech-pill">Billing System</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- PROJECT 06: WASTE MANAGEMENT SYSTEM (RIGHT) -->
-                    <article class="project-alt-row project-right reveal-right delay-5">
-                        <div class="project-alt-meta">
-                            <span class="project-alt-num">06</span>
-                            <span class="project-alt-type">Web Project</span>
-                        </div>
-                        <div class="project-alt-content">
-                            <h3 class="project-alt-title">Waste Management System</h3>
-                            <p class="project-alt-sub">Structured Web Interface</p>
-                            <p class="project-alt-desc">
-                                A web-based waste management project created using HTML and CSS to present and organize waste management information through a clean, structured interface.
-                            </p>
-                            <div class="project-alt-tech">
-                                <span class="tech-pill">HTML</span>
-                                <span class="tech-pill">CSS</span>
-                                <span class="tech-pill">Web Layouts</span>
-                            </div>
-                        </div>
-                    </article>
-
+                <div class="section-header">
+                    <h2 class="section-title">Let's Connect</h2>
+                    <div class="accent-line"></div>
                 </div>
 
-            </div>
-        </section>
+                <p class="contact-intro">
+                    Feel free to reach out via email or connect with me on GitHub and LinkedIn.
+                </p>
 
-        <!-- 6. SKILLS SECTION (EDITORIAL ASYMMETRIC COMPOSITION) -->
-        <section id="skills" class="skills-section section-padding">
-            <div class="container">
-                <header class="section-header">
-                    <span class="section-label">SKILLS</span>
-                    <h2 class="section-title">Skills I’m Building With</h2>
-                    <p class="section-intro">
-                        Technologies and tools I have explored through academics, projects, internships, hackathons and continuous learning.
-                    </p>
-                </header>
-
-                <div class="skills-editorial-composition">
-                    
-                    <!-- SKILLS ALTERNATING GRID FOR 01-06 -->
-                    <div class="skills-alt-grid">
-                        
-                        <!-- 01. PROGRAMMING LANGUAGES (LEFT) -->
-                        <article class="skill-alt-card skill-left reveal-left">
-                            <div class="group-header">
-                                <span class="skill-group-num">01</span>
-                                <h3 class="group-title">Programming Languages</h3>
-                                <div class="group-divider"></div>
-                            </div>
-                            <div class="skills-interactive-list">
-                                <span class="skill-item-tag">Python</span>
-                                <span class="skill-item-tag">Java</span>
-                                <span class="skill-item-tag">C</span>
-                                <span class="skill-item-tag">JavaScript</span>
-                                <span class="skill-item-tag">PHP</span>
-                            </div>
-                        </article>
-
-                        <!-- 02. WEB DEVELOPMENT (RIGHT) -->
-                        <article class="skill-alt-card skill-right reveal-right delay-1">
-                            <div class="group-header">
-                                <span class="skill-group-num">02</span>
-                                <h3 class="group-title">Web Development</h3>
-                                <div class="group-divider"></div>
-                            </div>
-                            <div class="skills-interactive-list">
-                                <span class="skill-item-tag">HTML5</span>
-                                <span class="skill-item-tag">CSS3</span>
-                                <span class="skill-item-tag">JavaScript</span>
-                                <span class="skill-item-tag">React</span>
-                                <span class="skill-item-tag">jQuery</span>
-                                <span class="skill-item-tag">Responsive Web Design</span>
-                                <span class="skill-item-tag">WordPress</span>
-                            </div>
-                        </article>
-
-                        <!-- 03. BACKEND DEVELOPMENT (LEFT) -->
-                        <article class="skill-alt-card skill-left reveal-left delay-2">
-                            <div class="group-header">
-                                <span class="skill-group-num">03</span>
-                                <h3 class="group-title">Backend Development</h3>
-                                <div class="group-divider"></div>
-                            </div>
-                            <div class="skills-interactive-list">
-                                <span class="skill-item-tag">Node.js</span>
-                                <span class="skill-item-tag">Python</span>
-                                <span class="skill-item-tag">Django</span>
-                                <span class="skill-item-tag">Flask</span>
-                            </div>
-                        </article>
-
-                        <!-- 04. DATABASE (RIGHT) -->
-                        <article class="skill-alt-card skill-right reveal-right delay-3">
-                            <div class="group-header">
-                                <span class="skill-group-num">04</span>
-                                <h3 class="group-title">Database</h3>
-                                <div class="group-divider"></div>
-                            </div>
-                            <div class="skills-interactive-list">
-                                <span class="skill-item-tag">MySQL</span>
-                                <span class="skill-item-tag">MongoDB</span>
-                            </div>
-                        </article>
-
-                        <!-- 05. DATA & MACHINE LEARNING (LEFT) -->
-                        <article class="skill-alt-card skill-left reveal-left delay-4">
-                            <div class="group-header">
-                                <span class="skill-group-num">05</span>
-                                <h3 class="group-title">Data & Machine Learning</h3>
-                                <div class="group-divider"></div>
-                            </div>
-                            <div class="skills-interactive-list">
-                                <span class="skill-item-tag">NumPy</span>
-                                <span class="skill-item-tag">Pandas</span>
-                                <span class="skill-item-tag">Machine Learning</span>
-                                <span class="skill-item-tag">Phishing Detection</span>
-                            </div>
-                        </article>
-
-                        <!-- 06. TOOLS & PLATFORMS (RIGHT) -->
-                        <article class="skill-alt-card skill-right reveal-right delay-5">
-                            <div class="group-header">
-                                <span class="skill-group-num">06</span>
-                                <h3 class="group-title">Tools & Platforms</h3>
-                                <div class="group-divider"></div>
-                            </div>
-                            <div class="skills-interactive-list">
-                                <span class="skill-item-tag">GitHub</span>
-                                <span class="skill-item-tag">VS Code</span>
-                                <span class="skill-item-tag">Render</span>
-                                <span class="skill-item-tag">Vercel</span>
-                                <span class="skill-item-tag">AI Tools</span>
-                            </div>
-                        </article>
-
-                    </div>
-
-                    <!-- 07. UI/UX — CURRENTLY LEARNING (DISTINCT FULL-WIDTH RECTANGULAR HIGHLIGHT SECTION) -->
-                    <article class="uiux-learning-section reveal-frame delay-5">
-                        <div class="uiux-header-row">
-                            <div class="title-learning-badge-wrap">
-                                <h3 class="uiux-section-title">UI/UX</h3>
-                                <span class="currently-learning-badge">
-                                    <span class="badge-pulse-dot"></span>
-                                    CURRENTLY LEARNING
-                                </span>
-                            </div>
-                            <div class="group-divider terracotta-divider"></div>
+                <div class="contact-cards">
+                    <!-- Email -->
+                    <a href="mailto:dharmarayank@gmail.com" class="contact-card">
+                        <div class="contact-icon">✉</div>
+                        <div class="contact-details">
+                            <span class="contact-label">Email</span>
+                            <span class="contact-value">dharmarayank@gmail.com</span>
                         </div>
-                        <div class="skills-interactive-list uiux-pills-wrap">
-                            <span class="skill-item-tag terracotta-pill">Figma</span>
-                            <span class="skill-item-tag terracotta-pill">User Research</span>
-                            <span class="skill-item-tag terracotta-pill">Wireframing</span>
-                            <span class="skill-item-tag terracotta-pill">Prototyping</span>
-                        </div>
-                    </article>
+                    </a>
 
+                    <!-- GitHub -->
+                    <a href="https://github.com/dharmarayank946" target="_blank" rel="noopener noreferrer" class="contact-card">
+                        <div class="contact-icon">💻</div>
+                        <div class="contact-details">
+                            <span class="contact-label">GitHub</span>
+                            <span class="contact-value">github.com/dharmarayank946</span>
+                        </div>
+                    </a>
+
+                    <!-- LinkedIn -->
+                    <a href="https://www.linkedin.com/in/nagalambika-k-a283b039b/" target="_blank" rel="noopener noreferrer" class="contact-card">
+                        <div class="contact-icon">🔗</div>
+                        <div class="contact-details">
+                            <span class="contact-label">LinkedIn</span>
+                            <span class="contact-value">linkedin.com/in/nagalambika-k</span>
+                        </div>
+                    </a>
                 </div>
-
-            </div>
-        </section>
-
-        <!-- 7. MY JOURNEY SECTION (STORYTELLING TIMELINE) -->
-        <section id="journey" class="journey-section section-padding">
-            <div class="container">
-                <header class="section-header">
-                    <span class="section-label">MY JOURNEY</span>
-                    <h2 class="section-title">From Learning to Building</h2>
-                    <p class="section-intro">
-                        My journey has been shaped by exploration, practical experiences, projects, hackathons and a continuous desire to learn.
-                    </p>
-                </header>
-
-                <div class="journey-timeline-wrapper">
-                    <!-- Central connecting vertical line -->
-                    <div class="timeline-central-line"></div>
-
-                    <!-- 01 — STARTED COLLEGE -->
-                    <div class="timeline-node reveal-achievement">
-                        <div class="node-marker">
-                            <span class="node-number">01</span>
-                            <div class="node-dot"></div>
-                        </div>
-                        <article class="timeline-content-card">
-                            <span class="stage-label">STARTED COLLEGE</span>
-                            <h3 class="stage-title">Starting My CSE Journey</h3>
-                            <p class="stage-description">
-                                When I started college, I did not know much about technology or development. My early college experience introduced me to programming, technology and the different possibilities within computer science.
-                            </p>
-                        </article>
-                    </div>
-
-                    <!-- 02 — EXPLORING TECHNOLOGY -->
-                    <div class="timeline-node node-right reveal-achievement delay-1">
-                        <div class="node-marker">
-                            <span class="node-number">02</span>
-                            <div class="node-dot"></div>
-                        </div>
-                        <article class="timeline-content-card">
-                            <span class="stage-label">EXPLORING TECHNOLOGY</span>
-                            <h3 class="stage-title">Discovering Through Projects & Hackathons</h3>
-                            <p class="stage-description">
-                                Through college learning, projects and hackathons, I gradually started exploring different areas of technology. These experiences helped me become more curious about development and problem solving.
-                            </p>
-                        </article>
-                    </div>
-
-                    <!-- 03 — FRONTEND DEVELOPMENT -->
-                    <div class="timeline-node reveal-achievement delay-2">
-                        <div class="node-marker">
-                            <span class="node-number">03</span>
-                            <div class="node-dot"></div>
-                        </div>
-                        <article class="timeline-content-card">
-                            <span class="stage-label">FRONTEND DEVELOPMENT</span>
-                            <h3 class="stage-title">Creating for the Web</h3>
-                            <p class="stage-description">
-                                I began with frontend development and enjoyed creating websites and working with web technologies. This experience developed my interest in Web Development.
-                            </p>
-                        </article>
-                    </div>
-
-                    <!-- 04 — FIRST INTERNSHIP -->
-                    <div class="timeline-node node-right reveal-achievement delay-3">
-                        <div class="node-marker">
-                            <span class="node-number">04</span>
-                            <div class="node-dot"></div>
-                        </div>
-                        <article class="timeline-content-card">
-                            <span class="stage-label">FIRST INTERNSHIP</span>
-                            <h3 class="stage-title">Getting Practical Experience</h3>
-                            <p class="stage-description">
-                                After completing my fourth semester, I got my first internship opportunity. It gave me practical exposure to website development, UI design, project management, research and documentation.
-                            </p>
-                        </article>
-                    </div>
-
-                    <!-- 05 — EXPLORING FULL STACK -->
-                    <div class="timeline-node reveal-achievement delay-4">
-                        <div class="node-marker">
-                            <span class="node-number">05</span>
-                            <div class="node-dot"></div>
-                        </div>
-                        <article class="timeline-content-card">
-                            <span class="stage-label">EXPLORING FULL STACK</span>
-                            <h3 class="stage-title">Moving Beyond the Frontend</h3>
-                            <p class="stage-description">
-                                Through my internship experiences and projects, I began understanding that web development goes beyond the frontend. This encouraged me to explore backend technologies and Full Stack Development.
-                            </p>
-                        </article>
-                    </div>
-
-                    <!-- 06 — EXPLORING UI/UX -->
-                    <div class="timeline-node node-right learning-node reveal-achievement delay-5">
-                        <div class="node-marker">
-                            <span class="node-number terracotta-text">06</span>
-                            <div class="node-dot terracotta-dot"></div>
-                        </div>
-                        <article class="timeline-content-card terracotta-highlight-card">
-                            <div class="label-badge-group">
-                                <span class="stage-label terracotta-label">EXPLORING UI/UX</span>
-                                <span class="currently-learning-badge">CURRENTLY LEARNING</span>
-                            </div>
-                            <h3 class="stage-title">Combining Creativity with Technology</h3>
-                            <p class="stage-description">
-                                Now in my 5th semester, I have started exploring UI/UX to connect my creative side with technology. I am currently learning Figma, user research, wireframing and prototyping.
-                            </p>
-                        </article>
-                    </div>
-
-                    <!-- 07 — CONTINUING TO LEARN -->
-                    <div class="timeline-node reveal-achievement delay-5">
-                        <div class="node-marker">
-                            <span class="node-number">07</span>
-                            <div class="node-dot pulse-dot"></div>
-                        </div>
-                        <article class="timeline-content-card final-stage-card">
-                            <span class="stage-label">CONTINUING TO LEARN</span>
-                            <h3 class="stage-title">The Journey Continues</h3>
-                            <p class="stage-description">
-                                I continue to learn through web development, projects, internships, hackathons and UI/UX exploration. My journey is still evolving as I discover new technologies and opportunities to build.
-                            </p>
-                        </article>
-                    </div>
-
-                </div>
-
             </div>
         </section>
     </main>
 
-    <!-- WEBSITE FOOTER & CONTACT -->
-    <footer class="site-footer" id="contact">
-        <div class="container footer-container">
-            <div class="footer-top">
-                <div class="footer-brand">
-                    <h3 class="footer-name">Nagalambika D Koralli</h3>
-                    <p class="footer-role">Student • Web Development Intern • UI/UX Learner</p>
-                    <p class="footer-closing">Learning, building and growing one step at a time.</p>
-                </div>
-                <div class="footer-links-group">
-                    <h4 class="footer-links-heading">Connect With Me</h4>
-                    <div class="footer-social-links">
-                        <a href="https://github.com/dharmarayank946" target="_blank" rel="noopener noreferrer" class="footer-social-link">
-                            GitHub <span class="link-arrow">→</span>
-                        </a>
-                        <a href="https://www.linkedin.com/in/nagalambika-k-a283b039b/" target="_blank" rel="noopener noreferrer" class="footer-social-link">
-                            LinkedIn <span class="link-arrow">→</span>
-                        </a>
-                        <a href="mailto:dharmarayank@gmail.com" class="footer-social-link">
-                            Email <span class="link-arrow">→</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p class="footer-copyright">© 2026 Nagalambika D Koralli. All rights reserved.</p>
-            </div>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p class="footer-name">Nagalambika D Koralli</p>
+            <p class="footer-subtitle">Computer Science Student • Web Development Learner</p>
+            <p class="footer-copyright">&copy; 2026 Nagalambika D Koralli</p>
         </div>
     </footer>
 
-    <script src="script.js"></script>
 </body>
 </html>
-
-
