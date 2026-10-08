@@ -1,0 +1,127 @@
+import os
+import subprocess
+
+html_content = """<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Task & Project Completion Report - Nagalambika D Koralli</title>
+<style>
+  body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+    line-height: 1.6;
+    color: #1e293b;
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+  h1 { color: #0f766e; border-bottom: 2px solid #0d9488; padding-bottom: 8px; margin-bottom: 20px; }
+  h2 { color: #1e3a8a; margin-top: 30px; border-bottom: 1px solid #cbd5e1; padding-bottom: 4px; }
+  h3 { color: #0d9488; }
+  table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+  th, td { border: 1px solid #cbd5e1; padding: 10px 14px; text-align: left; }
+  th { background-color: #f1f5f9; color: #0f172a; font-weight: 600; }
+  tr:nth-child(even) { background-color: #f8fafc; }
+  .alert-note { background-color: #f0fdf4; border-left: 4px solid #16a34a; padding: 12px 16px; margin: 16px 0; border-radius: 4px; }
+  .alert-tip { background-color: #eff6ff; border-left: 4px solid #2563eb; padding: 12px 16px; margin: 16px 0; border-radius: 4px; }
+  code { background-color: #f1f5f9; padding: 2px 6px; border-radius: 4px; font-family: monospace; font-size: 0.9em; }
+  pre { background-color: #0f172a; color: #f8fafc; padding: 14px; border-radius: 6px; overflow-x: auto; }
+  pre code { background-color: transparent; color: inherit; }
+  .badge { display: inline-block; padding: 3px 8px; border-radius: 12px; font-size: 0.85em; font-weight: 600; background: #e0f2fe; color: #0369a1; }
+</style>
+</head>
+<body>
+<h1>Project & Task Completion Report: Syntecxhub Portfolio Website</h1>
+<p><strong>Developer:</strong> Nagalambika D Koralli (Computer Science & Engineering Undergraduate)<br>
+<strong>Organization:</strong> SYNTECXHUB / Sharanbasava University<br>
+<strong>GitHub Repository:</strong> <a href="https://github.com/dharmarayank946/Syntechhub_Portfolio_Website">dharmarayank946/Syntechhub_Portfolio_Website</a><br>
+<strong>Live Deployment:</strong> <a href="https://dharmarayank946.github.io/Syntechhub_Portfolio_Website/">https://dharmarayank946.github.io/Syntechhub_Portfolio_Website/</a><br>
+<strong>Date:</strong> October 3, 2026</p>
+
+<hr>
+
+<h2>1. Executive Summary</h2>
+<p>This report documents the end-to-end design, implementation, refinement, structural optimization, and cloud deployment of <strong>Nagalambika D Koralli’s Official Portfolio Website</strong>. Built purely using standard semantic <strong>HTML5</strong> and custom modular <strong>CSS3</strong>, the portfolio provides a high-impact, professional platform showcasing academic achievements, internships, industry certificates, projects, and offer letters.</p>
+
+<h2>2. Technology Stack & Key Guidelines</h2>
+<table>
+  <thead>
+    <tr><th>Aspect</th><th>Specification</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>Markup Language</strong></td><td>HTML5 (Semantic document hierarchy, clean sectioning)</td></tr>
+    <tr><td><strong>Styling Engine</strong></td><td>Vanilla CSS3 (Custom design tokens, glassmorphism card components, CSS Grid/Flexbox)</td></tr>
+    <tr><td><strong>Frameworks / Libraries</strong></td><td>None (Zero dependency, optimized single-page static application)</td></tr>
+    <tr><td><strong>Typography</strong></td><td>Modern sans-serif stack (Plus Jakarta Sans, Inter fallback)</td></tr>
+    <tr><td><strong>Color Palette</strong></td><td>Soft teal accents (<code>#0d9488</code>), warm amber highlights (<code>#d97706</code>), white card surfaces</td></tr>
+    <tr><td><strong>Version Control & Hosting</strong></td><td>Git, GitHub (<code>dharmarayank946</code>), GitHub Pages</td></tr>
+  </tbody>
+</table>
+
+<h2>3. Section Architecture & Layout Hierarchy</h2>
+<ol>
+  <li><strong>Hero Section</strong>: Clean presentation of name (<em>Nagalambika D Koralli</em>), subtitle (<em>Web Developer | UI/UX Learner</em>), and undergraduate background without photo placeholders or obsolete titles.</li>
+  <li><strong>01. About Me</strong>: Highlights Computer Science & Engineering B.Tech details at Sharanbasava University (CGPA 9.62) and Pre-University education (88%).</li>
+  <li><strong>02. Achievements</strong>: Uniform highlight-card components featuring Bug Hunt First Prize, Jnanothsava Hackathon, Invictus, Codemyfyp, and Ignite Bootcamp achievements.</li>
+  <li><strong>03. Internships</strong>: Categorized into Ongoing (<em>Veda Technology</em>, <em>SYNTECXHUB</em>, <em>Next Gen Software Hub</em>, <em>Zen AI</em>) and Completed (<em>ElevanceSkills</em>, <em>Mastertej</em>) with verified offer letter document links.</li>
+  <li><strong>04. Skills</strong>: Categorized skill chips across Web Technologies, UI/UX & Tools, and Core CS Fundamentals.</li>
+  <li><strong>05. Offer Letters</strong>: Centralized archive of official offer letters (<em>Axlero</em>, <em>Clinch Cloud</em>, <em>CodeAlpha</em>, <em>Zaalima</em>) with status tags (<em>Offer Received — Not Accepted</em>).</li>
+  <li><strong>06. Certifications</strong>: Display of 14 verified industry certificates with concise 1–2 line descriptions and clean badge presentation.</li>
+  <li><strong>07. Projects</strong>: Equal-weight 3-column project grid showcasing <em>GovShield Nexus</em>, <em>Smart Hospital Consultation & Queue Dashboard</em>, and interactive full-stack projects.</li>
+  <li><strong>08. Contact Me</strong>: Direct contact section featuring email (<code>nagalambikakoralli17@gmail.com</code>), LinkedIn, and GitHub links.</li>
+</ol>
+
+<h2>4. Summary of Key Modifications & Enhancements</h2>
+<div class="alert-note">
+  <strong>Note:</strong> All changes strictly adhered to user guidelines: zero mixing of secondary profile data, pure HTML+CSS architecture, and equal visual priority across project components.
+</div>
+<ul>
+  <li><strong>Hero Section Refinement</strong>: Completely removed obsolete "Python Developer / Full Stack Developer" labels and eliminated photo frame placeholders for a sleek typography-driven hero.</li>
+  <li><strong>Next Gen Software Hub Internship Addition</strong>: Added the 4-week Web Development Internship starting October 7, 2026, complete with direct PDF access (<code>nextgen_offer.pdf</code>).</li>
+  <li><strong>Zen AI Card Update</strong>: Updated the Zen AI card with an active document button linking directly to the verified internship offer letter.</li>
+  <li><strong>Uniform Card Styling</strong>: Standardized card backgrounds across hackathons and achievements for visual alignment.</li>
+  <li><strong>Root Restructuring for GitHub Pages</strong>: Moved all web app assets from a subfolder directly to the root of the repository so that GitHub Pages serves the portfolio directly at the primary domain.</li>
+</ul>
+
+<h2>5. Deployment & Deliverables Status</h2>
+<table>
+  <thead>
+    <tr><th>Item</th><th>Location / Details</th><th>Status</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>GitHub Repository</strong></td><td><a href="https://github.com/dharmarayank946/Syntechhub_Portfolio_Website">dharmarayank946/Syntechhub_Portfolio_Website</a></td><td><span class="badge">Pushed & Up to Date</span></td></tr>
+    <tr><td><strong>Live Web URL</strong></td><td><a href="https://dharmarayank946.github.io/Syntechhub_Portfolio_Website/">https://dharmarayank946.github.io/Syntechhub_Portfolio_Website/</a></td><td><span class="badge">Active</span></td></tr>
+    <tr><td><strong>Local Web Server</strong></td><td><code>http://localhost:5500/</code></td><td><span class="badge">Running</span></td></tr>
+    <tr><td><strong>Offline ZIP Package</strong></td><td><code>portfolio_website.zip</code> (<code>D:\Projects\Veda\portfolio_website.zip</code>)</td><td><span class="badge">Generated (~9.4 MB)</span></td></tr>
+  </tbody>
+</table>
+
+<div class="alert-tip">
+  <strong>Tip for Future Updates:</strong> To update the repository in the future, navigate to <code>D:\Projects\Veda</code> in your terminal and run:
+  <pre><code>git add -A
+git commit -m "Update portfolio content"
+git push origin main</code></pre>
+</div>
+</body>
+</html>
+"""
+
+html_path = r"D:\Projects\Veda\Project_Report.html"
+pdf_path = r"D:\Projects\Veda\Project_Report.pdf"
+
+with open(html_path, "w", encoding="utf-8") as f:
+    f.write(html_content)
+
+edge_exe = r"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"
+cmd = [
+    edge_exe,
+    "--headless",
+    "--disable-gpu",
+    f"--print-to-pdf={pdf_path}",
+    f"file:///{html_path.replace('\\', '/')}"
+]
+
+print("Running PDF generation...")
+result = subprocess.run(cmd, capture_output=True, text=True)
+print("Result code:", result.returncode)
+print("PDF created:", os.path.exists(pdf_path))
